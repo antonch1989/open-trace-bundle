@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugsurfing\HelperBundle\EventListener;
+namespace Plugsurfing\OpenTraceBundle\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\FilterResponseEvent;

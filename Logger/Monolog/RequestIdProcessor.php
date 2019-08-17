@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugsurfing\HelperBundle\Logger\Monolog;
+namespace Plugsurfing\OpenTraceBundle\Logger\Monolog;
 
 use Monolog\Processor\ProcessorInterface;
 use Symfony\Component\HttpFoundation\Request;
