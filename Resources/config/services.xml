@@ -4,11 +4,11 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="plugsurfing.helper.process_id_header_listener" class="Plugsurfing\HelperBundle\EventListener\OpenTracingSubscriber">
+        <service id="plugsurfing.helper.process_id_header_listener" class="Plugsurfing\OpenTraceBundle\EventListener\OpenTracingSubscriber">
             <tag name="kernel.event_subscriber" />
         </service>
 
-        <service id="plugsurfing.helper.logger.monoglog.process_id" class="Plugsurfing\HelperBundle\Logger\Monolog\RequestIdProcessor">
+        <service id="plugsurfing.helper.logger.monoglog.process_id" class="Plugsurfing\OpenTraceBundle\Logger\Monolog\RequestIdProcessor">
             <argument type="service" id="request_stack" />
             <tag name="monolog.processor" />
         </service>
